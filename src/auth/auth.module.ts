@@ -9,8 +9,8 @@ import { UsersModule } from '@/users/users.module';
     UsersModule,
     JwtModule.register({
       global:true,
-      secret: 'jdfguidsfhijghjsdfghsdhgjhjsfdg',
-      signOptions: { expiresIn: '120s' },
+      secret: 'jwt-secret',
+      signOptions: { expiresIn: '300s' },
     })
   ],
   controllers: [AuthController],
