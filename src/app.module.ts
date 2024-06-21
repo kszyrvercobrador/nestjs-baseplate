@@ -11,7 +11,7 @@ import authConfig from './config/auth.config';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [appConfig, databaseConfig, authConfig]
+      load: [appConfig, databaseConfig, authConfig],
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
@@ -22,6 +22,6 @@ import authConfig from './config/auth.config';
     }),
     UsersModule,
     AuthModule,
-  ]
+  ],
 })
-export class AppModule { }
+export class AppModule {}
